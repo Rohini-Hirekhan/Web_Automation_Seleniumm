@@ -1,0 +1,65 @@
+Selenium Webdriver
+-----------------------
+what is webdriver?
+-> webdriver is one of the component in selenium
+-> webdriver is module  (in python)(interface in java)
+module contains classes and variables
+
+chrome browser - > Chrome etc
+
+-> webdriver is an API
+selenium architecture -
+
+Locators -
+identify webelement
+action
+
+locatores -
+tag name and class name - mostly used when we want select multiple webelements
+
+id,linktext and partial linktext - used when we want select single webelement
+
+css selector -
+1) tag and id -> tag is optional here
+syntax-> tagname#valueOfId or #value of id
+
+2) tag and class -
+syntax - tag.valueof class or .value of class
+
+3) tag and attribute -
+syntax - input[attibute=value] or [attribute=value]
+
+4) tag , class, and attribute
+syntax - input.valueof class[attibute=value]
+
+xpath -
+two types of xpath is there -1) absolute 2) relative
+absolute xpath - it starts from the root html node
+- starts with single slash
+- we use only tag nodes
+- syntax - /html/body/div[1]/li[1]/a
+- disadv - if developer add new element or changed location of variable then this xpath will broken.
+address of a webelement
+
+1) and - if both element matches with html then only element will be found
+syntax - //tagname[@attribute name = 'value' and @attribute name = 'value']
+
+2) or - if one of the element matches in the html then only element will be found
+syntax - //tagname[@attribute name = 'value' or @attribute name ='value']
+
+3) contains - element will be identified if part of attribute value is given.
+it is used when we want to find dynamic webelements
+syntax - //*[contains(@attribute name = '')
+//tagname[contains(@attribute name = 'substring')
+
+4) starts-with - element will be identified if any attribute value is start with given value.
+syntax - //*[starts-with(@attribute value,'')]
+//tagname[starts-with(@attribute value,'ab')]
+
+5) text - we can find element on the basis of inner text.
+syntax - //tagname[text()="inner text "]
+
+
+
+
+
